@@ -119,7 +119,7 @@
       </div>
       <div class="slidshow-container">
         <div class="slidshow fade">
-          <a href="" class="slide-link">
+          <a href="#" class="slide-link">
             <img
               src="https://dkstatics-public.digikala.com/digikala-adservice-banners/7c1a7e820ad07756adbcf3281e80c2156cb54d53_1698831937.jpg?x-oss-process=image/quality,q_95/format,webp"
               alt=""
@@ -127,7 +127,7 @@
           </a>
         </div>
         <div class="slidshow fade">
-          <a href="" class="slide-link">
+          <a href="#" class="slide-link">
             <img
               src="https://dkstatics-public.digikala.com/digikala-adservice-banners/835e7dc45a07715d4ddb943cd5d7630b6af7ac25_1699037451.jpg?x-oss-process=image/quality,q_95/format,webp"
               alt=""
@@ -135,17 +135,34 @@
           </a>
         </div>
         <div class="slidshow fade">
-          <a href="" class="slide-link">
+          <a href="#" class="slide-link">
             <img
               src="https://dkstatics-public.digikala.com/digikala-adservice-banners/be43c4c7b33938efd06978239260d2475a14f8b5_1699258854.gif?x-oss-process=image?x-oss-process=image/format,webp"
               alt=""
             />
           </a>
         </div>
-        <div style="text-align: center" class="dots">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+
+        <div style="text-align: center; cursor: pointer" class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div class="buttonarrow">
+          <span class="btn-arrow btn-r" onclick="mineslides(1)">
+            <svg class="icon icon-saerch">
+              <use
+                xlink:href="/images/icons/symbol-defs.svg#icon-chevron-up"
+              ></use>
+            </svg>
+          </span>
+          <span class="btn-arrow btn-l" onclick="plusSlides(1)">
+            <svg class="icon icon-saerch">
+              <use
+                xlink:href="/images/icons/symbol-defs.svg#icon-chevron-up"
+              ></use>
+            </svg>
+          </span>
         </div>
       </div>
     </header>
