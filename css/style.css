@@ -27,14 +27,17 @@ header {
   align-items: center;
 }
 
+/* part img */
 .img-ads img {
   width: 100%;
   height: 6rem;
 }
+/* part container */
 .header-container {
   width: 98%;
   height: 10.8rem;
 }
+/* part container-up */
 .header-container-up {
   width: 100%;
   height: 6.8rem;
@@ -126,6 +129,7 @@ header {
 .cart:hover {
   transform: scale(1.2);
 }
+/* part container-down */
 .header-container-down {
   width: 100%;
   height: 4rem;
@@ -209,11 +213,56 @@ header {
 .nav-end {
   width: 22.2rem;
   height: 4rem;
-  background-color: #434546;
+  background-color: #cbdbe3;
 }
 
 .location {
   width: 17.3rem;
   height: 4rem;
+  background-color: #c6dce7;
+}
+
+/* part slidshow-container */
+
+.slidshow-container {
+  width: 98%;
+  height: 40rem;
   background-color: #434546;
+  position: relative;
+}
+.slidshow {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.slidshow img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: 100%;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #434546;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
